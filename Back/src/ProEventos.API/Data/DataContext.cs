@@ -3,11 +3,11 @@ using ProEventos.API.Models;
 
 namespace ProEventos.API.Data
 {
-    public class DataContex : DbContext 
+    public class DataContext : DbContext 
     {
-        public DataContex(DbContextOptions<DataContex> options) : base(options) 
+        public DataContext(DbContextOptions<DataContext> options) : base(options) 
         {
-
+            
         }
         public DbSet<Evento> Eventos { get; set; }
     }
